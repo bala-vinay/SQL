@@ -1,0 +1,13 @@
+USE mydemo;
+INSERT INTO users (name, email) VALUES
+    ('John Doe', 'john@example.com'),
+    ('Jane Smith', 'jane@example.com'),
+    ('Alice Johnson', 'alice@example.com'),
+    ('Bob Brown', 'bob@example.com');
+    SELECT * FROM users WHERE name = 'John Doe' OR name = 'Jane Smith';
+    SELECT * FROM users WHERE NOT name = 'John Doe';
+    SELECT * FROM users WHERE name = 'John Doe' AND email = 'john@example.com';
+    SELECT * FROM users WHERE name = 'John Doe' OR email = 'jane@example.com';
+    SELECT * FROM users ORDER BY name ASC;
+    SELECT * FROM users ORDER BY name DESC;
+    EXIT;
